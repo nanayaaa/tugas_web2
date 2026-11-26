@@ -7,6 +7,7 @@ Route::get('/shuttles/export-pdf', [ShuttleController::class, 'exportPdf'])->nam
 
 Route::resource('shuttles', ShuttleController::class)->except('show');
 
+//Untuk route get dari view welcome
 Route::get('/', function () {
     return view('welcome');
 });

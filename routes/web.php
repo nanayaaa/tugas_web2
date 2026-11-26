@@ -7,6 +7,7 @@ Route::get('/shuttles/export-pdf', [ShuttleController::class, 'exportPdf'])->nam
 
 Route::resource('shuttles', ShuttleController::class)->except('show');
 
+// Mahasiswa A Mengubah baris ke 10
 Route::get('/', function () {
     return view('welcome');
 });
